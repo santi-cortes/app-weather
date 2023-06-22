@@ -1,3 +1,4 @@
+import { SearchOutlined } from '@ant-design/icons';
 import React from 'react';
 
 const SearchZone = () => {
@@ -7,7 +8,9 @@ const SearchZone = () => {
 				type="text"
 				className="bg-transparent text-white border-none w-[95%] text-2xl p-1"
 			/>
-			<button className="w-[10%] flex justify-center"></button>
+			<button className="w-[10%] flex justify-center h-full transition-text duration-200 active:text-blue-600">
+				<SearchOutlined className="text-2xl" />
+			</button>
 		</div>
 	);
 };

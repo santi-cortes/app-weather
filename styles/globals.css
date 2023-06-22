@@ -164,6 +164,32 @@ input:checked + .switch:active::before {
 	transform: translateX(130px);
 }
 
+.sun {
+	animation-name: sunny;
+	animation-duration: 25s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.top-umbrella {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 45px solid white;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	transform: rotate(45deg);
+}
+
+@keyframes sunny {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 @keyframes walking {
 	0% {
 		transform: translateX(0px);

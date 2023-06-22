@@ -54,19 +54,25 @@ export default function Home() {
 						<Clouds />
 					</div>
 					<div>
-						<iframe
-							title="Lista de reproducción de Spotify"
-							src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYgToHlKhwA5?utm_source=generator"
-							width="92%"
-							height="120"
-							frameBorder="0"
-							allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-							loading="lazy"
-							className="m-4"
-						></iframe>
-						<h1 className="text-center -mt-[45px]">
-							Escucha la lluvia y relajate
-						</h1>
+						{true ? (
+							<>
+								<iframe
+									title="Lista de reproducción de Spotify"
+									src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYgToHlKhwA5?utm_source=generator"
+									width="92%"
+									height="120"
+									frameBorder="0"
+									allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+									loading="lazy"
+									className="m-4"
+								></iframe>
+								<h1 className="text-center -mt-[45px]">
+									Escucha la lluvia y relajate
+								</h1>
+							</>
+						) : (
+							<></>
+						)}
 					</div>
 					<SearchZone />
 					<MainCard />

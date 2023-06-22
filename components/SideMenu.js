@@ -15,7 +15,7 @@ const SideMenu = () => {
 	};
 	return (
 		<div
-			className={`absolute ${
+			className={`absolute z-50 ${
 				sideBar
 					? 'backdrop-blur-sm translate-x-0'
 					: 'translate-x-[-100%] backdrop-blur-0'
