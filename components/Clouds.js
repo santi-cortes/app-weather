@@ -35,7 +35,7 @@ const Clouds = () => {
 					<div className="h-[2px] w-4 bg-blue-700 -rotate-[80deg] absolute water5 right-[170px]"></div>
 				</div>
 			)}
-			{true && (
+			{false && (
 				<div className="absolute right-[10%] w-[50px] h-[50px] flex justify-center items-center sun">
 					<div className="w-8 h-8 bg-yellow-400 rounded-full"></div>
 					<div className="absolute w-[50px] h-[50px] flex justify-center items-center">
@@ -51,6 +51,16 @@ const Clouds = () => {
 						<div className="w-1 h-4 bg-yellow-400 mb-[60px] absolute"></div>
 					</div>
 				</div>
+			)}
+			{true && (
+				<>
+					<div className="absolute bg-slate-200 h-12 w-12 rounded-full right-10 shadow-slate-100 moon"></div>
+					<div className="bg-white w-1 h-1 stars right-8 absolute"></div>
+					<div className="bg-white w-1 h-1 stars1 left-12 top-32 absolute"></div>
+					<div className="bg-white w-1 h-1 stars right-48 top-20 absolute"></div>
+					<div className="bg-white w-1 h-1 stars1 right-14 top-24 absolute"></div>
+					<div className="bg-white w-1 h-1 stars left-24  absolute"></div>
+				</>
 			)}
 			<div className="person absolute bottom-[106px]">
 				<div className="umbrella">

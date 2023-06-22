@@ -3,28 +3,12 @@ import Footer from '@/components/Footer';
 import MainCard from '@/components/MainCard';
 import OtherWheathers from '@/components/OtherWheathers';
 import SearchZone from '@/components/SearchZone';
-import { useEffect, useState } from 'react';
+import { AppContext } from '@/context/AppWrapper';
+import { useContext, useEffect, useState } from 'react';
 
 export default function Home() {
-	const [theme, setTheme] = useState('dark');
-	const [isChecked, setIsChecked] = useState(false);
-	const [modal, setModal] = useState(false);
-	useEffect(() => {
-		if (
-			window.matchMedia('(prefers-color-scheme: dark)').matches &&
-			window !== undefined
-				? localStorage.getItem('theme') === 'dark'
-				: false
-		) {
-			document.documentElement.classList.add('dark');
-		} else {
-			setIsChecked(true);
-			document.documentElement.classList.add('light');
-		}
-		window !== undefined
-			? setModal(sessionStorage.getItem('modalClose'))
-			: false;
-	}, []);
+	const { setTheme, theme, modal, setModal, isChecked, setIsChecked } =
+		useContext(AppContext);
 
 	const activate = (th) => {
 		let pageTheme = th.target.value;
@@ -50,6 +34,7 @@ export default function Home() {
 					<h1 className="text-center">
 						Una app de clima diferente, más simple, mas amena.
 					</h1>
+					<MainCard />
 					<div className="h-[45vh] border-4 m-4 p-4 relative flex overflow-hidden thunders">
 						<Clouds />
 					</div>
@@ -75,7 +60,7 @@ export default function Home() {
 						)}
 					</div>
 					<SearchZone />
-					<MainCard />
+					<OtherWheathers />
 					<OtherWheathers />
 					<OtherWheathers />
 				</section>

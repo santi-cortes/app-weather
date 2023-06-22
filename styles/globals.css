@@ -49,6 +49,27 @@ input:checked + .switch:active::before {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(0, 150, 136, 0.2);
 }
 
+button:active {
+	transition: text;
+	transition-duration: 300ms;
+	color: rgba(37, 99, 235) !important;
+}
+
+.moon {
+	box-shadow: 1px 1px 20px 1px white;
+}
+
+.stars {
+	box-shadow: 1px 1px 25px 3px white;
+}
+
+.stars1 {
+	box-shadow: 1px 1px 20px 2px white;
+}
+.stars {
+	box-shadow: 1px 1px 25px 3px white;
+}
+
 .water {
 	animation-name: lluvia;
 	animation-duration: 3s;
@@ -284,9 +305,10 @@ input:checked + .switch:active::before {
 
 @keyframes truenos {
 	0% {
+		background-color: transparent;
 	}
 	79% {
-		background-color: #334155;
+		background-color: transparent;
 	}
 	80% {
 		background-color: white;
