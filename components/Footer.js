@@ -1,9 +1,4 @@
 import React from 'react';
-import {
-	AiFillFacebook,
-	AiFillInstagram,
-	AiFillLinkedin
-} from 'react-icons/ai';
 
 const Footer = () => {
 	return (
@@ -14,23 +9,17 @@ const Footer = () => {
 					href="https://www.facebook.com/sant.mw"
 					target="_blank"
 					className="bg-slate-950 text-white dark:bg-white dark:text-slate-900 text-3xl flex justify-center items-center"
-				>
-					<AiFillFacebook />
-				</a>
+				></a>
 				<a
 					href="https://www.instagram.com/santyao476/"
 					target="_blank"
 					className="bg-slate-950 text-white dark:bg-white dark:text-slate-900 text-3xl flex justify-center items-center"
-				>
-					<AiFillInstagram />
-				</a>
+				></a>
 				<a
 					href="https://www.linkedin.com/in/santiago-cortes-7043a8251/"
 					target="_blank"
 					className="bg-slate-950 text-white dark:bg-white dark:text-slate-900 text-3xl flex justify-center items-center"
-				>
-					<AiFillLinkedin />
-				</a>
+				></a>
 			</div>
 			<h1 className="text-center">
 				Hecho por: <br /> Santiago Cortes

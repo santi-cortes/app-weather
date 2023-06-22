@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import MainCard from '@/components/MainCard';
 import OtherWheathers from '@/components/OtherWheathers';
 import SearchZone from '@/components/SearchZone';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
 	const [theme, setTheme] = useState('dark');

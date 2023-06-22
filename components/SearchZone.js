@@ -1,5 +1,4 @@
 import React from 'react';
-import { AiOutlineSearch } from 'react-icons/ai';
 
 const SearchZone = () => {
 	return (
@@ -8,9 +7,7 @@ const SearchZone = () => {
 				type="text"
 				className="bg-transparent text-white border-none w-[95%] text-2xl p-1"
 			/>
-			<button className="w-[10%] flex justify-center">
-				<AiOutlineSearch className="text-2xl" />
-			</button>
+			<button className="w-[10%] flex justify-center"></button>
 		</div>
 	);
 };
