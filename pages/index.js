@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import MainCard from '@/components/MainCard';
 import OtherWheathers from '@/components/OtherWheathers';
 import SearchZone from '@/components/SearchZone';
+import SecondMainCard from '@/components/SecondMainCard';
 import { AppContext } from '@/context/AppWrapper';
 import { useContext, useEffect, useState } from 'react';
 
@@ -34,7 +35,12 @@ export default function Home() {
 					<h1 className="text-center">
 						Una app de clima diferente, más simple, mas amena.
 					</h1>
-					<MainCard />
+					<div className="relative m-4 min-h-[300px] flip-card z-20">
+						<div className="flip-card-inner">
+							<MainCard />
+							<SecondMainCard />
+						</div>
+					</div>
 					<div className="h-[45vh] border-4 m-4 p-4 relative flex overflow-hidden thunders">
 						<Clouds />
 					</div>

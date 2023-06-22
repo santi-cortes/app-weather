@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import React from 'react';
 
 const MainCard = () => {
 	return (
-		<div className="text-slate-950 dark:text-white p-3 border-4 m-4 flex flex-col gap-3">
+		<div className="absolute top-0 text-slate-950 bg-white p-3 min-h-[310px] dark:text-white dark:bg-slate-950 border-4 flex flex-col gap-3 flip-card-front z-20">
 			<h1 className="font-semibold">El clima desde China es este:</h1>
 			<div className="flex flex-wrap gap-2 justify-around text-xl">
 				<div>
