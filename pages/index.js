@@ -74,7 +74,7 @@ export default function Home() {
 
 				{!modal && (
 					<div
-						className={`absolute w-full h-full backdrop-blur-sm ${
+						className={`absolute w-full h-[106%] backdrop-blur-sm ${
 							modal ? 'backdrop-blur-0 scale-0' : ''
 						} transition-backdrop duration-500 top-0 text-black dark:text-white flex`}
 					>

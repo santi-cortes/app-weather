@@ -29,10 +29,8 @@ const SideMenu = () => {
 	return (
 		<div
 			className={`absolute z-50 ${
-				sideBar
-					? 'backdrop-blur-sm translate-x-0'
-					: 'translate-x-[-100%] backdrop-blur-0'
-			} h-[100%] transition-all duration-300 w-full z-100 top-0 right-0 flex flex-row-reverse`}
+				sideBar ? 'translate-x-0' : 'translate-x-[-100%]'
+			} h-[100%] backdrop-blur-sm transition-all duration-300 w-full z-100 top-0 right-0 flex flex-row-reverse`}
 		>
 			<div
 				className={`bg-white relative text-slate-900 dark:bg-slate-900 dark:text-white w-[60%] p-5 text-center transition-translate duration-300`}
