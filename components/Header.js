@@ -8,7 +8,7 @@ const Header = () => {
 	};
 
 	return (
-		<header className="bg-white text-slate-900 dark:bg-slate-900 dark:text-white p-2 flex justify-between items-center h-[6%]">
+		<header className="bg-slate-300 text-slate-900 dark:bg-slate-900 dark:text-white p-2 flex justify-between items-center h-[6%]">
 			<h1 className="font-semibold text-2xl">App weather</h1>
 			<button
 				className="flex flex-col justify-between h-fit cursor-pointer"

@@ -1,29 +1,77 @@
-import React from 'react';
+import { AppContext } from '@/context/AppWrapper';
+import React, { useContext, useEffect, useState } from 'react';
 
 const Clouds = () => {
+	const clouds = {
+		dark: {
+			bg: 'bg-white',
+			border: 'border-white'
+		},
+		light: {
+			bg: 'bg-gray-300',
+			border: 'border-gray-300'
+		}
+	};
+	const { theme } = useContext(AppContext);
+	const [themeFinal, setThemeFinal] = useState();
+
+	useEffect(() => {
+		if (theme !== 'dark') {
+			setThemeFinal(`${clouds.dark.bg} ${clouds.dark.border}`);
+		} else {
+			setThemeFinal(`${clouds.light.bg} ${clouds.light.border}`);
+		}
+	}, [theme]);
+
 	return (
 		<>
 			<div className="absolute z-10 cloud left-[60px] top-[30px]">
-				<div className="w-16 h-4 bg-white shadow-xl border-2 border-white rounded-[10px]"></div>
-				<div className="w-[100px] h-4 bg-white shadow-xl border-2 border-white rounded-[10px] -mt-2 -ml-[14px]"></div>
-				<div className="w-[120px] h-4 bg-white shadow-xl border-2 border-white rounded-[10px] -mt-2 -ml-[25px]"></div>
-				<div className="w-[100px] h-4 bg-white shadow-xl border-2 border-white -ml-4 -mt-2 rounded-[10px]"></div>
+				<div
+					className={`w-16 h-4 ${themeFinal} shadow-xl border-2 ${themeFinal} rounded-[10px]`}
+				></div>
+				<div
+					className={`w-[100px] h-4 ${themeFinal} shadow-xl border-2 ${themeFinal} rounded-[10px] -mt-2 -ml-[14px]`}
+				></div>
+				<div
+					className={`w-[120px] h-4 ${themeFinal} shadow-xl border-2 rounded-[10px] -mt-2 -ml-[25px]`}
+				></div>
+				<div
+					className={`w-[100px] h-4 ${themeFinal} shadow-xl border-2 -ml-4 -mt-2 rounded-[10px]`}
+				></div>
 			</div>
 			<div className="absolute z-10 cloud1 right-[132px] top-[64px]">
-				<div className="w-[55px] h-4 bg-white shadow-xl border-2 border-white rounded-[10px] ml-3"></div>
-				<div className="w-[88px] h-4 bg-white shadow-xl border-2 border-white -mt-2 rounded-[10px]"></div>
+				<div
+					className={`w-[55px] h-4 ${themeFinal} shadow-xl border-2 rounded-[10px] ml-3`}
+				></div>
+				<div
+					className={`w-[88px] h-4 ${themeFinal} shadow-xl border-2 -mt-2 rounded-[10px]`}
+				></div>
 			</div>
 
 			<div className="absolute z-10 cloud2 right-[36px] top-[20px]">
-				<div className="w-[30px] h-4 bg-white shadow-xl border-2 border-white rounded-[10px] ml-5"></div>
-				<div className="w-[65px] h-4 bg-white shadow-xl border-2 border-white rounded-[10px] ml-[6px] -mt-2"></div>
-				<div className="w-[100px] h-4 bg-white shadow-xl border-2 border-white rounded-[10px] -ml-1 -mt-2"></div>
-				<div className="w-[110px] h-4 bg-white shadow-xl border-2 border-white rounded-[10px] -mt-2"></div>
-				<div className="w-16 h-4 bg-white shadow-xl border-2 border-white rounded-[10px] -mt-2 ml-9"></div>
+				<div
+					className={`w-[30px] h-4 ${themeFinal} shadow-xl border-2 rounded-[10px] ml-5`}
+				></div>
+				<div
+					className={`w-[65px] h-4 ${themeFinal} shadow-xl border-2 rounded-[10px] ml-[6px] -mt-2`}
+				></div>
+				<div
+					className={`w-[100px] h-4 ${themeFinal} shadow-xl border-2 rounded-[10px] -ml-1 -mt-2`}
+				></div>
+				<div
+					className={`w-[110px] h-4 ${themeFinal} shadow-xl border-2 rounded-[10px] -mt-2`}
+				></div>
+				<div
+					className={`w-16 h-4 ${themeFinal} shadow-xl border-2 rounded-[10px] -mt-2 ml-9`}
+				></div>
 			</div>
 			<div className="absolute z-10 cloud3 right-[180px] top-[40px]">
-				<div className="w-[55px] h-4 bg-white shadow-xl border-2 border-white rounded-[10px] ml-3"></div>
-				<div className="w-[88px] h-4 bg-white shadow-xl border-2 border-white -mt-2 rounded-[10px]"></div>
+				<div
+					className={`w-[55px] h-4 ${themeFinal} shadow-xl border-2 rounded-[10px] ml-3`}
+				></div>
+				<div
+					className={`w-[88px] h-4 ${themeFinal} shadow-xl border-2 -mt-2 rounded-[10px]`}
+				></div>
 			</div>
 			{true && (
 				<div className="w-full relative border-b-2 border-b-white">
@@ -64,8 +112,10 @@ const Clouds = () => {
 			)}
 			<div className="person absolute bottom-[106px]">
 				<div className="umbrella">
-					<div className="absolute top-umbrella -mt-12 -ml-1"></div>
-					<div className="absolute w-1 h-[70px] rounded-b-xl ml-10 -mt-3 bg-white"></div>
+					<div className="absolute top-umbrella -mt-12 -ml-1 box"></div>
+					<div
+						className={`absolute w-1 h-[70px] rounded-b-xl ml-10 -mt-3 ${themeFinal}`}
+					></div>
 				</div>
 				<div className="bg-white w-6 h-6 rounded-full"></div>
 				<div className="relative">

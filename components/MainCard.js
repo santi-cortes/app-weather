@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const MainCard = ({ activateFlip, setActivateFlip }) => {
 	const flipCard = () => {
 		setActivateFlip(!activateFlip);
 	};
 	return (
-		<div className="absolute top-0 text-slate-950 bg-white p-3 min-h-[360px] dark:text-white dark:bg-slate-950 border-4 flex flex-col gap-3 flip-card-front z-20">
+		<div className="absolute top-0 shadow-md text-slate-950 bg-white p-3 h-[380px] dark:text-white dark:bg-slate-950 border-4 flex flex-col gap-3 flip-card-front z-20">
 			<h1 className="font-semibold">El clima desde China es este:</h1>
 			<div className="flex flex-wrap gap-2 justify-around text-xl">
 				<div>
@@ -31,7 +31,10 @@ const MainCard = ({ activateFlip, setActivateFlip }) => {
 				<h1>Soleado ☀️</h1>
 			</div>
 			<div className="text-center">
-				<button onClick={flipCard} className="button-card">
+				<button
+					onClick={flipCard}
+					className="border-4 p-1 hover:border-slate-400 duration-300 transition-border"
+				>
 					Ver mapa
 				</button>
 			</div>

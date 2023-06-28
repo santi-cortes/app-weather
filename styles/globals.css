@@ -12,6 +12,10 @@ body {
 	letter-spacing: 3px;
 }
 
+li {
+	list-style-type: disc;
+}
+
 .switch {
 	display: inline-block;
 	position: relative;
@@ -196,7 +200,9 @@ button:active {
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
-	border: 45px solid white;
+	border: 45px;
+	border-style: solid;
+	border-color: white;
 	border-bottom-color: transparent;
 	border-right-color: transparent;
 	transform: rotate(45deg);
@@ -211,13 +217,13 @@ button:active {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	transition: transform 0.6s;
+	transition: transform 1s;
 	transform-style: preserve-3d;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card-inner-activate {
-	transition: transform 0.6s;
+	transition: transform 1s;
 	transform-style: preserve-3d;
 	transform: rotateY(180deg);
 }

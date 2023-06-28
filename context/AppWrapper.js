@@ -20,7 +20,8 @@ const AppWrapper = ({ children }) => {
 			document.documentElement.classList.add('light');
 		}
 		window !== undefined
-			? setModal(sessionStorage.getItem('modalClose'))
+			? setModal(sessionStorage.getItem('modalClose')) &&
+			  setTheme(localStorage.getItem('theme'))
 			: false;
 	}, []);
 

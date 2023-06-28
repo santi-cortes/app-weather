@@ -13,8 +13,8 @@ export default function Home() {
 	return (
 		<>
 			<div className="bg-white overflow-y-scroll text-slate-950 dark:bg-slate-950 h-screen w-screen dark:text-white flex flex-col">
-				<section className="h-fit p-1">
-					<h1 className="text-center">
+				<section className="h-fit p-1 flex flex-col gap-2">
+					<h1 className="text-center mt-4">
 						Una app de clima diferente, más simple, mas amena.
 					</h1>
 					<div className="relative m-4 min-h-[360px] flip-card z-0">
@@ -33,8 +33,10 @@ export default function Home() {
 							/>
 						</div>
 					</div>
-					<div className="h-[45vh] border-4 m-4 p-4 relative flex overflow-hidden thunders">
-						<Clouds />
+					<div className="m-4 bg-slate-950">
+						<div className="h-[45vh] p-4 border-4 relative flex overflow-hidden thunders shadow-lg">
+							<Clouds />
+						</div>
 					</div>
 					<div>
 						{true ? (

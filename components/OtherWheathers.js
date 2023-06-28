@@ -3,7 +3,7 @@ import React from 'react';
 
 const OtherWheathers = () => {
 	return (
-		<div className="m-4 border-4 p-4 flex flex-row justify-between items-center">
+		<div className="m-4 border-4 p-4 flex flex-row justify-between items-center shadow-lg">
 			<div className="flex flex-col justify-center">
 				<div className="w-12 h-12 border-2 border-slate-950 dark:border-white">
 					{/* <Image alt="" src={''} fill className="relative" /> */}
