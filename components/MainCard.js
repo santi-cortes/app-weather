@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const MainCard = () => {
+const MainCard = ({ activateFlip, setActivateFlip }) => {
+	const flipCard = () => {
+		setActivateFlip(!activateFlip);
+	};
 	return (
 		<div className="absolute top-0 text-slate-950 bg-white p-3 min-h-[350px] dark:text-white dark:bg-slate-950 border-4 flex flex-col gap-3 flip-card-front z-20">
 			<h1 className="font-semibold">El clima desde China es este:</h1>
@@ -26,6 +29,11 @@ const MainCard = () => {
 				<h1>Temperatura:</h1>
 				<h1 className="text-4xl">23º</h1>
 				<h1>Soleado ☀️</h1>
+			</div>
+			<div className="text-center">
+				<button onClick={flipCard} className="button-card">
+					Ver mapa
+				</button>
 			</div>
 		</div>
 	);

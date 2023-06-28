@@ -1,6 +1,9 @@
 import React from 'react';
 
-const SecondMainCard = () => {
+const SecondMainCard = ({ activateFlip, setActivateFlip }) => {
+	const flipCard = () => {
+		setActivateFlip(!activateFlip);
+	};
 	return (
 		<div className="absolute top-0 min-h-[350px] bg-white text-slate-950 dark:text-white dark:bg-slate-950 w-full border-4 flex flex-col gap-3 p-3 z-0 flip-card-back">
 			<div className="text-white text-center">Más sobre china</div>
@@ -12,6 +15,11 @@ const SecondMainCard = () => {
 				referrerPolicy="no-referrer-when-downgrade"
 				title="Google Maps Embed"
 			></iframe>
+			<div className="text-center">
+				<button onClick={flipCard} className="button-card">
+					Regresar
+				</button>
+			</div>
 		</div>
 	);
 };
