@@ -5,7 +5,7 @@ const MainCard = ({ activateFlip, setActivateFlip }) => {
 		setActivateFlip(!activateFlip);
 	};
 	return (
-		<div className="absolute top-0 text-slate-950 bg-white p-3 min-h-[350px] dark:text-white dark:bg-slate-950 border-4 flex flex-col gap-3 flip-card-front z-20">
+		<div className="absolute top-0 text-slate-950 bg-white p-3 min-h-[360px] dark:text-white dark:bg-slate-950 border-4 flex flex-col gap-3 flip-card-front z-20">
 			<h1 className="font-semibold">El clima desde China es este:</h1>
 			<div className="flex flex-wrap gap-2 justify-around text-xl">
 				<div>

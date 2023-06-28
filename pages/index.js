@@ -17,11 +17,11 @@ export default function Home() {
 					<h1 className="text-center">
 						Una app de clima diferente, más simple, mas amena.
 					</h1>
-					<div className="relative m-4 min-h-[350px] flip-card z-0">
+					<div className="relative m-4 min-h-[360px] flip-card z-0">
 						<div
-							className={
+							className={`${
 								activateFlip ? 'flip-card-inner-activate' : 'flip-card-inner'
-							}
+							} h-fit`}
 						>
 							<MainCard
 								activateFlip={activateFlip}
