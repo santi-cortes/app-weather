@@ -47,7 +47,7 @@ const Contact = () => {
 					</div>
 				</section>
 			</div>
-			<Footer />
+			<Footer height={'250'} />
 		</>
 	);
 };

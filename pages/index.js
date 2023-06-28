@@ -63,7 +63,7 @@ export default function Home() {
 					<OtherWheathers />
 					<OtherWheathers />
 					<OtherWheathers />
-					<Footer height={'230'} />
+					<Footer height={'250'} />
 				</section>
 
 				<Modal />
