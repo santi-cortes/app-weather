@@ -5,7 +5,7 @@ const SecondMainCard = ({ activateFlip, setActivateFlip }) => {
 		setActivateFlip(!activateFlip);
 	};
 	return (
-		<div className="absolute shadow-md top-0 h-[380px] bg-white text-slate-950 dark:text-white dark:bg-slate-950 w-full border-4 flex flex-col justify-end gap-3 p-3 z-0 flip-card-back">
+		<div className="absolute shadow-md top-0 h-[380px] bg-white text-slate-950 dark:text-white dark:bg-slate-950 w-full border-4 flex flex-col gap-3 p-3 z-0 flip-card-back">
 			<div className="text-slate-950 dark:text-white text-center">
 				Más sobre china:
 			</div>

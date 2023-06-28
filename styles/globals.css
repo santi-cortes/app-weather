@@ -16,6 +16,18 @@ li {
 	list-style-type: disc;
 }
 
+textarea {
+	border: none;
+	outline: none;
+	resize: none;
+	padding: 5px;
+}
+
+.input-lg::placeholder {
+	position: absolute;
+	top: 10px;
+}
+
 .switch {
 	display: inline-block;
 	position: relative;
@@ -54,9 +66,11 @@ input:checked + .switch:active::before {
 }
 
 button:active {
-	transition: text;
-	transition-duration: 300ms;
+	transition: all;
+	transition-duration: 150ms;
 	color: rgba(37, 99, 235) !important;
+	margin-top: 6px;
+	box-shadow: none;
 }
 
 .moon {

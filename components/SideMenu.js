@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React, { useContext, useState } from 'react';
 
 const SideMenu = () => {
-	const { sideBar, setSideBar, setTheme, theme } = useContext(AppContext);
-	const [isChecked, setIsChecked] = useState(false);
+	const { sideBar, setSideBar, setTheme, theme, isChecked, setIsChecked } =
+		useContext(AppContext);
 
 	const openSideBar = () => {
 		setSideBar(false);

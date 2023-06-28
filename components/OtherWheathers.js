@@ -21,7 +21,9 @@ const OtherWheathers = () => {
 					<h1>30%</h1>
 				</div>
 			</div>
-			<button>Más</button>
+			<button className="border-4 p-1 shadow-xl hover:border-slate-300 transition-border duration-300f">
+				Más
+			</button>
 		</div>
 	);
 };

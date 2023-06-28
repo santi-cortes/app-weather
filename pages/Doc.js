@@ -4,14 +4,14 @@ import React, { useEffect } from 'react';
 const Doc = () => {
 	return (
 		<>
-			<div className="h-screen overflow-auto bg-white dark:bg-slate-950 dark:text-white text-slate-950 flex flex-col gap-2">
-				<div className="m-4 flex flex-col gap-4">
+			<div className="h-screen w-screen overflow-y-scroll bg-white dark:bg-slate-950 dark:text-white text-slate-950 flex flex-col gap-2">
+				<header className="m-4 flex flex-col gap-4">
 					<h1 className="text-center">HOLA, BIENVENIDO A LA DOCUMENTACION!</h1>
 					<p>
 						Aquí encontrarás información de la api que se uso para desarrollar
 						esta aplicación
 					</p>
-				</div>
+				</header>
 				<nav className="m-4 p-10 border-4">
 					<ul className="flex flex-col gap-2">
 						<li className="hover:underline cursor-pointer">Inicio</li>
@@ -53,7 +53,7 @@ const Doc = () => {
 				<section className="m-4 flex flex-col gap-4">
 					<h1 className="text-2xl">Sugerencias</h1>
 				</section>
-				<Footer />
+				<Footer height={'280px'} />
 			</div>
 		</>
 	);
