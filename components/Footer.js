@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
 	return (
-		<div className="h-[200px] bg-slate-200 text-slate-900 dark:text-white dark:bg-slate-900 flex flex-col p-5 gap-5">
+		<div className="h-[220px] bg-slate-200 text-slate-900 dark:text-white dark:bg-slate-900 flex flex-col p-5 gap-5">
 			<h1 className="text-center">Contacto:</h1>
 			<div className="text-center flex gap-2 justify-around items-center">
 				<a
